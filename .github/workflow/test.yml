@@ -1,0 +1,8 @@
+name: Github Action For React
+on: [push]
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
+      - run: echo "this is step number 2"
