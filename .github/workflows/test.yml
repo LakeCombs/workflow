@@ -8,7 +8,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "16"
+      - name: install node modules
+        run: yarn
       - name: Build the project
-        run: npm run Build
+        run: yarn Build
       - name: Setup finish
         run: echo "hurry! the buid is complete"
